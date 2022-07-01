@@ -7,7 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+        </ul>
+    </nav>
     <main>
         @yield('main_content')
     </main>
