@@ -15,6 +15,7 @@ class ComicController extends Controller
     public function index()
     {
         $comic_list = ComicModel::all();
+        
         return view('comic.index', compact('comic_list'));
     }
 
@@ -80,7 +81,7 @@ class ComicController extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->all();
-        
+
         $comic = ComicModel::findOrFail($id);        
         $comic->update($data);
         return redirect()->route('comic.show', ['comic' => $comic->id]);

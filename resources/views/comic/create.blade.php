@@ -40,7 +40,10 @@
                 <label for="description">Descrizione</label>
                 <textarea type="text" id="description" name="description"></textarea>
             </div>
-
+            <div>
+                <label for="type">Tipo di fumetto</label>
+                <textarea type="text" id="type" name="type"></textarea>
+            </div>
             <button type="submit">Submit</button>
         </form>
     </div>

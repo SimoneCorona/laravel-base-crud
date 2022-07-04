@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout.app')
 
 @section('main_content')
     <div class="container">
@@ -25,7 +25,7 @@
             </div>
 
             <div>
-                <label for="type">Description</label>
+                <label for="description">Description</label>
                 <input type="text" name="description" id="description"
                     value="{{ old('description') ? old('description') : $comic_update->description }}">
             </div>
