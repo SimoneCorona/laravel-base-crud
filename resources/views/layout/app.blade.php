@@ -10,7 +10,13 @@
     <nav>
         <ul>
             <li>
-                <a href=""></a>
+                <a href="{{ route('homepage') }}">Homepage</a>
+            </li>
+            <li>
+                <a href="{{ route('comic.index') }}">Lista dei fumetti</a>
+            </li>
+            <li>
+                <a href="{{ route('comic.create') }}">Inserisci un nuovo fumetto</a>
             </li>
         </ul>
     </nav>
